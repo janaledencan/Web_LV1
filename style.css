@@ -78,6 +78,9 @@ li a:hover::after {
     border-radius: 5%;
 }
 
+.btn-remove-style:hover {
+    color: var(--clr-purple);
+}
 
 main {
     display: flex;
@@ -224,7 +227,7 @@ main {
 }
 
 .btn-dribble {
-    background-color: var(--clr-pink);
+    background-color: var(--clr-dark-blue);
     justify-self: end;
     max-width: 12%;
 }
@@ -309,7 +312,7 @@ main {
 }
 
 .avatar-photo {
-    max-width: 7vw;
+    max-width: 6vw;
     height: auto;
 
     box-shadow: none;
@@ -479,7 +482,7 @@ hr {
     }
 
     .card {
-        max-width: 21%;
+        max-width: 22%;
     }
 }
 
@@ -487,6 +490,10 @@ hr {
 
     .testimonials-card {
         max-width: 350px;
+    }
+
+    .comment-user .suptitle {
+        font-size: medium;
     }
 }
 
@@ -530,6 +537,10 @@ hr {
         flex-wrap: wrap;
     }
 
+    .expertise .cards {
+        margin-bottom: 20%;
+    }
+
     .img-expertise {
         max-width: 5vw;
         height: auto;
@@ -548,6 +559,10 @@ hr {
 
     .btn-dribble {
         max-width: 17%;
+    }
+
+    .img-arrow {
+        max-width: 3vw;
     }
 
     .img-stars {
@@ -572,6 +587,11 @@ hr {
 @media (max-width: 810px) {
     .cards2 {
         gap: 2em;
+    }
+
+    .contact img {
+        max-width: 4.2vw;
+        margin-left: 10px;
     }
 }
 
@@ -599,9 +619,9 @@ hr {
         width: 60%;
     }
 
-    .expertise {
+    /* .expertise {
         margin-bottom: 5%;
-    }
+    } */
 
 
     .img-expertise {
@@ -618,8 +638,9 @@ hr {
 @media (max-width: 640px) {
 
     .links {
-        visibility: hidden;
-        max-width: 30%;
+        /* visibility: hidden;
+        max-width: 30%; */
+        display: none;
     }
 
 
@@ -632,12 +653,13 @@ hr {
         max-width: 300px;
     }
 
-    #home {
+    /* #home {
         width: 100%;
-    }
+    } */
 
     .expertise {
-        margin-bottom: 95%;
+        margin-bottom: 99%;
+        /****95**/
     }
 
     .btn-dribble {
@@ -653,6 +675,16 @@ hr {
 @media (min-width: 573px) and (max-width: 640px) {
     .expertise {
         margin-bottom: 5%;
+    }
+}
+
+@media (max-width:575px) {
+    .img-about {
+        display: none;
+    }
+
+    .img-arrow {
+        display: none;
     }
 }
 
