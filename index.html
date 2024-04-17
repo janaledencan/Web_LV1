@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -44,7 +44,7 @@
                     elementum tristique.</p>
                 <a href="#contact"><button class="btn-primary">Get In Touch</button></a>
             </div>
-            <div class="content-right">
+            <div class="content-right" aria-label="Image of John">
                 <img loading="lazy" class="man-photo" src="./images/Group 11 1.webp" alt="photo of a man">
             </div>
         </div>
@@ -212,21 +212,21 @@
                     <div class="form-row first-row">
                         <div class="form-element">
                             <label for="firstName" class="text">First name</label>
-                            <input type="text" id="firstName" name="firstName">
+                            <input type="text" id="firstName" name="firstName" autocomplete="name">
                         </div>
                         <div class="form-element">
                             <label for="lastName" class="text">Last name</label>
-                            <input type="text" id="lastName" name="lastName">
+                            <input type="text" id="lastName" name="lastName" autocomplete="family-name">
                         </div>
                     </div>
                     <div class="form-row second-row">
                         <div class="form-element">
                             <label for="email" class="text">Email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" aria-label="Email address" autocomplete="email">
                         </div>
                         <div class="form-element">
                             <label for="phone" class="text">Phone number</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" aria-label="Phone number">
                         </div>
                     </div>
                     <div class="form-row">
@@ -234,8 +234,10 @@
                             <label for="topic" class="text">Choose a topic</label>
                             <select id="topic" name="topic">
                                 <option value="">Select one...</option>
-                                <option value="topic1">Topic 1</option>
-                                <option value="topic2">Topic 2</option>
+                                <option value="topic1">Strategy</option>
+                                <option value="topic2">Branding</option>
+                                <option value="topic3">UI & UX</option>
+                                <option value="topic4">Web</option>
                             </select>
                         </div>
                     </div>
@@ -247,7 +249,7 @@
 
                     <div class="form-row">
                         <div class="form-element-checkbox">
-                            <input type="checkbox" id="terms" name="terms">
+                            <input type="checkbox" id="terms" name="terms" aria-label="Terms">
                             <label for="terms" class="text checkbox-text">I accept the terms</label>
                         </div>
                     </div>

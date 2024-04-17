@@ -14,7 +14,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -26,7 +25,6 @@ nav {
     padding: 12px;
     font-weight: 400;
     font-size: 14px;
-
 
     position: sticky;
     top: 0;
@@ -50,7 +48,6 @@ ul li a {
     padding: 0 20px;
     text-decoration: none;
     display: inline-block;
-
     color: var(--clr-black);
 }
 
@@ -86,7 +83,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 25vh;
-
     margin-bottom: 10vh;
 }
 
@@ -100,6 +96,7 @@ main {
 
 .content-left {
     width: 50%;
+    height: auto;
     padding: 0 5%;
 }
 
@@ -157,7 +154,6 @@ main {
     display: flex;
     flex-direction: row;
     height: auto;
-
     align-items: baseline;
     justify-content: space-evenly;
     gap: 2em;
@@ -181,7 +177,6 @@ main {
     background: white;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-
     margin-bottom: 2.5%;
 }
 
@@ -237,7 +232,6 @@ main {
     border: none;
     outline: none;
     box-shadow: none;
-
     color: white;
 }
 
@@ -274,7 +268,6 @@ main {
     text-decoration: underline;
     text-decoration-color: var(--clr-purple);
     text-underline-offset: 4px;
-
     display: flex;
     align-items: center;
 }
@@ -313,7 +306,6 @@ main {
 .avatar-photo {
     max-width: 6vw;
     height: auto;
-
     box-shadow: none;
     background-color: var(--clr-blue-gray);
 }
@@ -410,11 +402,9 @@ input[type="checkbox"] {
 footer {
     display: flex;
     flex-direction: column;
-
     padding: 8vh 3vw 8vh;
     font-weight: 400;
     font-size: 14px;
-
     background-color: var(--clr-blue-gray);
 }
 
@@ -423,7 +413,6 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
     padding-bottom: 4vh;
 }
 
@@ -442,7 +431,6 @@ hr {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
     padding-top: 3.5vh;
 }
 
@@ -451,7 +439,6 @@ hr {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
     margin-left: 32vw;
 }
 
@@ -538,8 +525,8 @@ hr {
 
     .man-photo {
         width: 100%;
+        height: auto;
     }
-
 
 
     .cards {
@@ -553,6 +540,10 @@ hr {
     .img-expertise {
         max-width: 5vw;
         height: auto;
+    }
+
+    #about {
+        margin-top: 15%;
     }
 
 
@@ -644,7 +635,6 @@ hr {
     .links {
         display: none;
     }
-
 
     .content-left {
         width: 80%;
