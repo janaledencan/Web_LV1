@@ -281,7 +281,6 @@ main {
 
 .img-arrow {
     padding-left: 10px;
-    max-width: 1vw;
 }
 
 /* 5. Testimonials */
@@ -486,6 +485,12 @@ hr {
     }
 }
 
+@media (min-width: 1441px) and (max-width: 1850px) {
+    .comment-user .suptitle {
+        font-size: 1vw;
+    }
+}
+
 @media (max-width: 1440px) {
 
     .testimonials-card {
@@ -501,6 +506,10 @@ hr {
 @media (min-width: 975px) {
     .portfolio-card {
         max-width: 28%;
+    }
+
+    .img-arrow {
+        max-width: 4vw;
     }
 }
 
@@ -573,7 +582,6 @@ hr {
         max-width: 25%;
     }
 
-    .comment-user .suptitle,
     .comment-user .text {
         font-size: medium;
     }
@@ -619,10 +627,6 @@ hr {
         width: 60%;
     }
 
-    /* .expertise {
-        margin-bottom: 5%;
-    } */
-
 
     .img-expertise {
         max-width: 27%;
@@ -638,8 +642,6 @@ hr {
 @media (max-width: 640px) {
 
     .links {
-        /* visibility: hidden;
-        max-width: 30%; */
         display: none;
     }
 
@@ -653,13 +655,8 @@ hr {
         max-width: 300px;
     }
 
-    /* #home {
-        width: 100%;
-    } */
-
     .expertise {
         margin-bottom: 99%;
-        /****95**/
     }
 
     .btn-dribble {
